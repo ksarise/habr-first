@@ -31,8 +31,18 @@
       "button",
       "timer__button",
       timerElement,
-      "Удалить"
+      "Delete"
     );
+
+    const intervalId = setInterval(() => {
+      if (timeRemaining > 0) {
+        timeRemaining--;
+        timeDisplay.textContent = timeRemaining;
+      } else {
+        clearInterval(intervalId);
+        timerElement.remove();
+      }
+    }, 1000);
   }
 
   addTimerButton.addEventListener("click", () => {
