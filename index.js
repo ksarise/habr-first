@@ -17,10 +17,8 @@
   }
 
   function createTimer(duration) {
-    console.log(duration);
     let timeRemaining = duration;
     const timerElement = createElem("li", "timer", timersList);
-    console.log(timerElement);
     const timeDisplay = createElem(
       "span",
       "timer__time",
@@ -43,6 +41,11 @@
         timerElement.remove();
       }
     }, 1000);
+
+    stopButton.addEventListener("click", () => {
+      clearInterval(intervalId);
+      timerElement.remove();
+    });
   }
 
   addTimerButton.addEventListener("click", () => {
