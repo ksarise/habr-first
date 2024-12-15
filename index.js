@@ -53,6 +53,8 @@
     if (!isNaN(duration) && duration > 0) {
       createTimer(duration);
       timeInput.value = "";
+    } else {
+      alert("Please enter a valid duration in seconds.");
     }
   });
 })();

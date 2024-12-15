@@ -20,6 +20,12 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.app__timers{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 .timer {
   display: flex;
   border: 1px solid #ccc;
