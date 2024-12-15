@@ -2,6 +2,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 500px;
+}
+.app__input{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.app__add-timer{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.timer {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.timer__time {
+  width: 100%;
+  text-align: center;
+}
+.timer__button {
+  padding: 5px 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
